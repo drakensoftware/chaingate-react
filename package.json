@@ -1,0 +1,95 @@
+{
+  "name": "chaingate-react",
+  "version": "1.0.0",
+  "description": "React hooks and providers for ChainGate — integrate multi-chain cryptocurrency wallets into React apps with two hooks. Create, import, and manage wallets across Bitcoin, Ethereum, and 30+ blockchains with zero boilerplate and automatic state synchronization.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "author": "ChainGate",
+  "homepage": "https://chaingate.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drakensoftware/chaingate-react"
+  },
+  "bugs": {
+    "url": "https://github.com/drakensoftware/chaingate-react/issues"
+  },
+  "keywords": [
+    "cryptocurrency",
+    "blockchain",
+    "bitcoin",
+    "ethereum",
+    "react",
+    "react-hooks",
+    "web3",
+    "defi",
+    "multi-chain",
+    "wallet",
+    "crypto-wallet",
+    "hd-wallet",
+    "evm",
+    "utxo",
+    "polygon",
+    "arbitrum",
+    "litecoin",
+    "dogecoin",
+    "bitcoin-cash",
+    "token-transfer",
+    "erc20",
+    "nft",
+    "crypto-payments",
+    "blockchain-api",
+    "typescript",
+    "sdk",
+    "react-provider",
+    "wallet-management",
+    "fiat-conversion",
+    "dapp"
+  ],
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "lint": "eslint src/ tests/",
+    "lint:fix": "eslint src/ tests/ --fix",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\" \"tests/**/*.{ts,tsx}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx}\" \"tests/**/*.{ts,tsx}\"",
+    "prepare": "husky"
+  },
+  "peerDependencies": {
+    "chaingate": ">=1",
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "chaingate": "^1.0.0",
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "eslint": "^10.0.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "happy-dom": "^20.8.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.8.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.56.1",
+    "vitest": "^4.0.18"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
+}
